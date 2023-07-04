@@ -1,0 +1,43 @@
+:root {
+  --main-green: #029491;
+  --main-black: #000;
+  --main-white: #fff;
+  --orange: #FFB64F;
+  --light-blue: #7CE3E1;
+  --blue: #5970FF;
+}
+
+@font-face {
+  font-family: Ferry;
+  src: url(./assets/fonts/ferry_black.otf);
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(./assets/fonts/Inter-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: Ferry;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--main-black);
+}
+
+h2 {
+  font-family: Ferry;
+  font-size: 30px;
+  line-height: 36px;
+  color: var(--main-black);
+}
+
+h3 {
+  font-family: Inter;
+  font-size: 26px;
+  line-height: 32px;
+  color: var(--main-black);
+}

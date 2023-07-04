@@ -1,0 +1,40 @@
+.userMenuWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.userMenuInfo {
+    text-align: right;
+    margin-right: 4px;
+    height: 32px;
+}
+
+.userMenuText {
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--main-black);
+    opacity: .7;
+    margin: 0;
+}
+
+.logoutBtn {
+    background: none;
+    border: none;
+    font-family: Inter;
+    font-size: 10px;
+    line-height: 12px;
+    color: var(--main-black);
+    opacity: .4;
+    cursor: pointer;
+}
+
+.userAvatarWrapper {
+    height: 32px;
+}
+
+@media (max-width: 850px) {
+    .userMenuWrapper {
+        display: none;
+    }
+}

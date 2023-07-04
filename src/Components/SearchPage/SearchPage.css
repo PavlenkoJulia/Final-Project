@@ -1,0 +1,95 @@
+.searchPageWrapper {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1440px;
+    box-sizing: border-box;
+    padding: 69px 60px 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchTitle {
+    margin: 0 0 25px;
+}
+
+.searchDescription {
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--main-black);
+    margin: 0 0 47px;
+    position: relative;
+}
+
+.searchImgWrapper {
+    margin-top: 62px;
+    display: flex;
+    flex-direction: column;
+}
+
+.topImgs {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.backgroundSearchImg {
+    margin: 107px 0 0 20px;
+}
+
+@media (max-width: 1370px) {
+    .backgroundSearchImg {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .searchPageWrapper {
+        flex-wrap: wrap;
+    }
+    .backgroundSearchImg {
+        width: 100%;
+        margin: 0;
+    }
+    .topImgs {
+        position: absolute;
+        top: 130px;
+        right: 90px;
+    }
+    .searchTitle {
+        width: 815px;
+    }
+}
+
+@media (max-width: 992px) {
+    .topImgs {
+        top: 220px;
+    }
+    .searchPageWrapper {
+        padding: 20px 35px;
+    }
+}
+
+@media (max-width: 850px) {
+    .searchTitle {
+        font-size: 28px;
+        line-height: 32px;
+        width: fit-content;
+    }
+    .searchDescription {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .topImgs {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .searchPageWrapper {
+        padding: 20px 14px;
+    }
+}

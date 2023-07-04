@@ -1,0 +1,41 @@
+.datesInput {
+    padding: 13px 15px;
+    align-items: center;
+    box-sizing: border-box;
+    width: 176px;
+    border: 1px solid rgba(199, 199, 199, 1);
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    outline: none;
+}
+
+.datePickerWrapper {
+    margin-top: 20px;
+}
+
+.ant-picker:hover {
+    border-color: rgba(199, 199, 199, 1);
+}
+
+.datesInput:first-of-type {
+    margin-right: 20px;
+}
+
+.ant-picker-input > input {
+    text-align: center;
+    color: #949494;
+    opacity: .4;
+}
+
+@media (max-width: 850px) {
+    .datePickerWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .datesInput {
+        width: 335px;
+    }
+    .datesInput:first-of-type {
+        margin-bottom: 20px;
+    }
+}

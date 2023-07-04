@@ -1,0 +1,30 @@
+.footerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--main-green);
+    padding: 0 60px;
+}
+
+.contacts {
+    text-align: right;
+}
+
+.contactInfo,
+.copyrights {
+    color: var(--main-white);
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+}
+
+.copyrights {
+    margin: 21px 0 0;
+}
+
+@media (max-width: 850px) {
+    .footerWrapper {
+        padding: 0 14px;
+    }
+}

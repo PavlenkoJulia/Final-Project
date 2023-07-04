@@ -1,0 +1,81 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1300px;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+.navigationLink,
+.registerBtn,
+.loginBtn {
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--main-black);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.navigationLink:not(:last-of-type) {
+    margin-right: 49px;
+}
+
+.navigationLink:hover {
+    color: var(--light-blue);
+}
+
+.signInPart {
+    display: flex;
+    align-items: center;
+}
+
+.registerBtn {
+    opacity: .4;
+    margin-right: 40px;
+    position: relative;
+    background: none;
+    border: none;
+}
+
+.registerBtn::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 26px;
+    right: -18px;
+    top: 0;
+    background-color: var(--main-green);
+}
+
+.loginBtn {
+    background: var(--light-blue);
+    border: none;
+    border-radius: 5px;
+    padding: 4px 10px 4px 12px;
+    cursor: pointer;
+}
+
+.registerBtn:hover {
+    opacity: 1;
+}
+
+.loginBtn:hover {
+    background: var(--blue);
+    color: var(--main-white);
+}
+
+@media (max-width: 850px) {
+    .header {
+        width: 850px;
+        max-width: 100%;
+        padding: 0 14px;
+    }
+    .navigation {
+        display: none;
+    }
+}

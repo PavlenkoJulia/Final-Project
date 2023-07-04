@@ -1,0 +1,161 @@
+.whyWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 108px;
+}
+
+.whyTitle {
+    font-family: Ferry;
+    font-size: 45px;
+    line-height: 54px;
+    color: var(--main-black);
+    margin: 0 0 70px;
+}
+
+.sliderWrapper {
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.whySlider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.whySlider > .slick-slider {
+    margin: 0 auto;
+    width: 1200px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.whySlider > .slick-list {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.whySlider > .slick-list .slick-track {   
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 1200px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.whySlider > .slick-list .slick-track .slick-slide {
+    width: 400px;
+}
+
+.cardWrapper {
+    width: 400px;
+    box-sizing: border-box;
+    height: 225px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    background: var(--main-white);
+}
+
+.whySlider > .slick-list .slick-track .slick-slide:not(:last-of-type) {
+    margin-right: 30px;
+}
+
+.cardIcon {
+    margin-bottom: 20px;
+}
+
+.cardText {
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--main-black);
+}
+
+.arrowLeft {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.arrowRight {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.backgroundImgWrapper {
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    position: relative;
+    background-image: url('../../assets//images//main_page_picture_2.jpg');
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 576px;
+}
+
+@media (max-width: 1370px) {
+    .whySlider {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .whySlider {
+        width: 800px;
+    }
+}
+
+@media (max-width: 992px) {
+    .whySlider {
+        width: 700px;
+    }
+
+    .cardWrapper {
+        width: 320px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 850px) {
+    .whySlider {
+        width: 500px;
+    }
+
+    .cardWrapper {
+        width: 320px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sliderWrapper {
+        width: 390px;
+    }
+    .whySlider {
+        width: 360px;
+        justify-content: center;
+    }
+    .whyTitle {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .whySlider {
+        width: 315px;
+    }
+}

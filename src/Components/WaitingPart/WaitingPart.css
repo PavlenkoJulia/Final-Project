@@ -1,0 +1,19 @@
+.waitingWrapper {
+    display: flex;
+}
+
+.waitingTitleWrapper {
+    margin: 44px 0 127px;
+}
+
+.waitingTitle {
+    margin: 0;
+}
+
+.waitingSubtitle {
+    margin: 36px 0 0;
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--main-black);
+}

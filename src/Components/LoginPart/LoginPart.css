@@ -1,0 +1,55 @@
+.btn_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register_btn {
+    border: none;
+    background: none;
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--main-black);
+    opacity: .4;
+    cursor: pointer;
+    position: relative;
+    margin-right: 40px;
+    transition: all .2s linear;
+}
+
+.register_btn:hover {
+    color: var(--main-green);
+}
+
+.register_btn::after {
+    content: '';
+    position: absolute;
+    right: -18px;
+    top: 0;
+    width: 2px;
+    height: 26px;
+    background-color: var(--main-green);
+}
+
+.login_btn {
+    border: none;
+    border-radius: 5px;
+    background: var(--light-blue);
+    padding: 5px 10px;
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--main-black);
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.login_btn:hover {
+    opacity: .7;
+}
+
+@media (max-width: 850px) {
+    .btn_wrapper {
+        display: none;
+    }
+}
